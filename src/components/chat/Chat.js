@@ -62,10 +62,12 @@ export const Chat = () => {
 
 
  useEffect(()=>{
-  let chat=JSON.parse(localStorage.getItem("inicialChat"))
+  setTimeout(()=>{
+    let chat=JSON.parse(localStorage.getItem("inicialChat"))
+    setInicialChat(chat)
+  },500)
   
-  setInicialChat(chat)
- },[user])
+ },[])
   
  
  
