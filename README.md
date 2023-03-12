@@ -23,5 +23,14 @@ La aplicación de chat cuenta con las siguientes funcionalidades:
 * Desarrollador: M. Miguel Blanor Guerrero | [LinkedIn](https://www.linkedin.com/in/miguel-guerrero-403939194/) | [GitHub](https://github.com/Eiine)
 
 
+### Instrucciones en local
+
+* clonar el repositorio
+* Ingresar a la ruta raiz
+* realizar npm install
+* Cambiar la variable de entorno REACT_APP_API_URL por tu host
+* Bajar la rama       del repositori api-generica y seguir las instrucciones
+
+
 ### Link al proyecto desplegado (deploy) 🔗:
 * 
