@@ -3,7 +3,7 @@ import io from 'socket.io-client';
 import{ guardarEnStorage } from "../../helpers/guardarStorage"
 import { Users } from './Users';
 import axios from 'axios';
-const socket = io("http://localhost:3001/");
+const socket = io(process.env.REACT_APP_API_URL);
 
 export const Chat = () => {
   
@@ -36,7 +36,7 @@ export const Chat = () => {
     const idSala=async()=>{
       let {data}= await axios({
         method: 'get',
-        url: 'http://localhost:3001/room'
+        url: `${process.env.REACT_APP_API_URL}/room`
       }
       )
     localStorage.setItem("sala",JSON.stringify(data))
