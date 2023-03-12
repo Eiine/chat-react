@@ -20,7 +20,7 @@ La aplicación de chat cuenta con las siguientes funcionalidades:
 
 
 ### Desarrollador 👨🏽‍💻
-* Desarrollador back-end: M. Miguel Blanor Guerrero | [LinkedIn](https://www.linkedin.com/in/miguel-guerrero-403939194/) | [GitHub](https://github.com/Eiine)
+* Desarrollador: M. Miguel Blanor Guerrero | [LinkedIn](https://www.linkedin.com/in/miguel-guerrero-403939194/) | [GitHub](https://github.com/Eiine)
 
 
 ### Link al proyecto desplegado (deploy) 🔗:
