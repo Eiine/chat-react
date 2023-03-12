@@ -1,38 +1,172 @@
-.App {
-  text-align: center;
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #0f0f3d;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.login-form {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px #000000;
 }
 
-.App-link {
-  color: #61dafb;
+.login-label {
+  color: #0f0f3d;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.login-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.login-input[type="password"] {
+  margin-top: 20px;
+  width: 300px
+}
+
+.login-button {
+  background-color: #0f0f3d;
+  color: #ffffff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background-color: #ffffff;
+  color: #0f0f3d;
+}
+
+
+/* Estilos del chat */
+
+.chatroom-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: auto;
+
+}
+
+.chat-container {
+  background-color: #ccc;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 100px;
+  flex: 1;
+  overflow: auto;
+}
+
+.users-container {
+  background-color: #eee;
+  padding: 10px;
+}
+
+.input-container {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  background-color: #fff;
+}
+
+.input-container input {
+  flex: 1;
+  margin-right: 10px;
+}
+
+@media (min-width: 768px) {
+  .chatroom-container {
+    flex-direction: row;
   }
-  to {
-    transform: rotate(360deg);
+
+  .chat-container {
+    margin-right: 10px;
   }
+}
+/* estilos de mensajes */
+.local{
+  display: block;
+  float: left;
+  height: auto;
+  width: auto;
+  min-width: 80px;
+  min-height: 50px;
+  padding: 5px;
+  border-radius: 20px;
+  color: blue;
+  background-color: cornflowerblue;
+}
+
+.local .nombre{
+  margin-left: 5px;
+  color: blue;
+  font-size: 10px;
+}
+
+.local .hora{
+  color: darkslateblue;
+  font-size: 10px;
+  text-align: end;
+  margin-right: 10px;
+  
+}
+
+.local .mensaje{
+  color: black;
+  font-size: 15px;
+  margin-left: 5px;
+  
+}
+
+ /* estilos de mensaje para user n2 */
+.user2{
+  display: block;
+  float: right;
+  height: auto;
+  width: auto;
+  min-width: 80px;
+  min-height: 50px;
+  padding: 5px;
+  border-radius: 20px;
+  background-color: yellowgreen;
+
+}
+
+.user2 .nombre{
+  margin-left: 5px;
+  color: blue;
+  font-size: 10px;
+}
+
+.user2 .hora{
+  color: darkslateblue;
+  font-size: 10px;
+  text-align: end;
+  margin-right: 10px;
+  
+}
+
+.user2 .mensaje{
+  color: black;
+  font-size: 15px;
+  margin-right: 5px;
 }
