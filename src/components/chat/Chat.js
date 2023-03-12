@@ -65,7 +65,7 @@ export const Chat = () => {
   let chat=JSON.parse(localStorage.getItem("inicialChat"))
   
   setInicialChat(chat)
- },[])
+ },[user])
   
  
  
@@ -86,9 +86,8 @@ export const Chat = () => {
         <h2>Chat</h2>
         <p>Escribe tu munsaje.</p>
           
-        {(inicialChat && inicialChat.length === 0) ? (
-                <div></div>) : (
-          inicialChat?.map((item1)=>{
+        {
+          inicialChat? inicialChat.map((item1)=>{
             return(
               <>
               <div className={item1.user === style.name ? 'local' : 'user2'} key={item1.id}>
@@ -102,8 +101,8 @@ export const Chat = () => {
             <br></br>
             <br></br>
               </>
-            )})
-          )}
+            )}):<h1>Cargando</h1>
+            }
         
           {
           chat?.map((item)=>{
