@@ -33,4 +33,4 @@ La aplicación de chat cuenta con las siguientes funcionalidades:
 
 
 ### Link al proyecto desplegado (deploy) 🔗:
-* 
+* https://chat-react-sand.vercel.app/
