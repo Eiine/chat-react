@@ -24,6 +24,18 @@ export const Register = () => {
         setMostrar(false)
         return console.log("Email ya existe en el sistema");
     }
+
+    //cargar mensajes de sala
+    const datos=async()=>{
+      let {data}= await axios({
+        method: 'get',
+        url: `${process.env.REACT_APP_API_URL}/room`
+      }
+      )
+      localStorage.setItem("inicialChat",JSON.stringify(data[0].other))
+    }
+    
+    datos()
        localStorage.setItem("user", JSON.stringify(data.user))
        navigate("/chat")
       
